@@ -1,0 +1,23 @@
+TESTFIELD("Customer Mail");
+Qt := 0;
+Inv := 0;
+SMTPCU.CreateMessage('Sesha','seshagopal.m@cetastech.com',"Customer Mail",'Shipment Details','',TRUE);
+SLRec.RESET;
+SLRec.SETRANGE("Document No.","No.");
+SLRec.SETRANGE("Sell-to Customer No.","Sell-to Customer No.");
+Str1 := STRSUBSTNO('<body><h2>Dear %1,</h2>',"Sell-to Customer Name");
+SMTPCU.AppendBody(Str1);
+Str1 := STRSUBSTNO('<h3>Thank you for shopping with %1! We hope you discovered something you truly love. Your order number is %2.It may arrive in part/multiple sipments.<h3>',COMPANYNAME,"No.");
+SMTPCU.AppendBody(Str1);
+SMTPCU.AppendBody('<table style="width:75%"><tr><th>Item</th><th>Quantity</th><th>Amount</th></tr>');
+IF SLRec.FINDSET THEN
+  REPEAT
+    Str1 := STRSUBSTNO('<tr><td><center>%1</center></td><td><center>%2</center></td><td><center>%3</center></td></tr>',SLRec.Description,SLRec.Quantity,SLRec."Line Amount");
+    SMTPCU.AppendBody(Str1);
+    Qt := Qt + SLRec.Quantity;
+    Inv := Inv + SLRec."Line Amount";
+  UNTIL SLRec.NEXT=0;
+Str1 := STRSUBSTNO('</table><br>Total Quantity you have purchased : %1.<br> The Total Invoice Amount for you have purchased : Rs.%2',Qt,Inv);
+SMTPCU.AppendBody(Str1);
+IF SMTPCU.TrySend THEN
+  MESSAGE('Email sent to the customer mail successfully..');
