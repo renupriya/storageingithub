@@ -1,0 +1,23 @@
+{
+  "id": "15a8053b-6ed1-4241-92e4-41fb3e6a1833",
+  "name": "GitStorage",
+  "publisher": "Default publisher",
+  "brief": "",
+  "description": "",
+  "version": "1.0.0.0",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "capabilities": [],
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "11.0.21836.0",
+  "application": "11.0.21836.0",
+  "idRange": {
+    "from": 50100,
+    "to": 50149
+  },
+  "runtime": "2.0"
+}

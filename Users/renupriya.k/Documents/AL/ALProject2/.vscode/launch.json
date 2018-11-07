@@ -1,0 +1,16 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "al",
+            "request": "launch",
+         "name": "Your own server",
+            "server": "http://localhost:8081/dynamicsnav110/",
+            "serverInstance": "DynamicsNAV110",
+            "authentication": "Windows",
+            "startupObjectId": 60001,
+            "port": 8049,
+            "startupObjectType": "Page"
+        }
+    ]
+}

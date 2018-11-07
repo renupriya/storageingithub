@@ -1,0 +1,22 @@
+{
+  "id": "d1f442b2-24bf-4081-b41a-6c97376268e0",
+  "name": "ALProject2",
+  "publisher": "Default publisher",
+  "brief": "",
+  "description": "",
+  "version": "1.0.0.0",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "capabilities": [],
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "11.0.0.0",
+  "application": "11.0.21836.0",
+  "idRange": {
+    "from": 50100,
+    "to": 60149
+  }
+}

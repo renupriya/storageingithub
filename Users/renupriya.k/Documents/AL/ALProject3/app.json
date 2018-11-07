@@ -1,0 +1,24 @@
+{
+  "id": "fbbaba15-2124-415a-8598-691d1eeb957c",
+  "name": "ALProject3",
+  "publisher": "Default publisher",
+  "brief": "",
+  "description": "",
+  \
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "capabilities": [],
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "11.0.0.0",
+  "application": "11.0.0.0",
+  "idRange": {
+    "from": 50100,
+    "to": 50149
+  },
+  
+  "runtime": "1.0"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "624da022-9d3c-4447-b2ba-9e2656e418d0",
+  "name": "ALPrj",
+  "publisher": "Default publisher",
+  "brief": "",
+  "description": "",
+  "version": "1.0.0.0",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "capabilities": [],
+  "dependencies": [
+     ],
+  "screenshots": [],
+  "platform": "11.0.0.0",
+  "application": "11.0.0.0",
+  "idRange": {
+    "from": 80100,
+    "to": 80149
+  },
+  
+  "runtime": "2.0"
+}
